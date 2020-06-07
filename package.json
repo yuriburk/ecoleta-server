@@ -4,7 +4,7 @@
   "main": "server.ts",
   "scripts": {
     "start": "node dist/server.js",
-    "build": "tsc && cd dist && npm run-script knex:migration && npm run-script knex:seed",
+    "build": "tsc",
     "dev": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
     "knex:seed": "knex seed:run --knexfile src/database/knexfile.ts",
     "knex:migration": "knex migrate:latest --knexfile src/database/knexfile.ts"
