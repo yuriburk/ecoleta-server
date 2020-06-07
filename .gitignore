@@ -2,4 +2,5 @@ node_modules
 .env.production
 yarn.lock
 *.sqlite
-uploads/*
+uploads/*.png
+uploads/*.jpg
