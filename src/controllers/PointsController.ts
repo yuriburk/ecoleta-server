@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import knex from '../database/connection';
+import knex from '../database/knexConnection';
 
 class PointsController {
   async index(request: Request, response: Response) {

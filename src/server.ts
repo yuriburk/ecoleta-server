@@ -5,8 +5,10 @@ import dotenv from 'dotenv';
 import { errors } from 'celebrate';
 
 import routes from './routes';
+import KnexMigrator from './database/knexMigrator';
 
 dotenv.config();
+KnexMigrator();
 
 const app = express();
 
@@ -22,6 +24,7 @@ app.listen(process.env.PORT || 5000, () =>
   console.log(
     '🚀 Server started at port 5000',
     process.env.NODE_ENV,
-    process.env.URL
+    process.env.URL,
+    process.env.PORT
   )
 );
