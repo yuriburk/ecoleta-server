@@ -6,12 +6,7 @@ import { errors } from 'celebrate';
 
 import routes from './routes';
 
-dotenv.config({
-  path:
-    process.env.NODE_ENV === 'development'
-      ? '.env.development'
-      : '.env.production',
-});
+dotenv.config();
 
 const app = express();
 
