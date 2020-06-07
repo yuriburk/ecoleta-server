@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/server.ts",
+    "start": "node dist/index.js",
     "dev": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
-    "knex:seed": "knex seed:run --knexfile knexfile.ts",
-    "knex:migration": "knex migrate:latest --knexfile knexfile.ts"
+    "knex:seed": "knex seed:run --knexfile src/database/knexfile.ts",
+    "knex:migration": "knex migrate:latest --knexfile src/database/knexfile.ts"
   },
   "repository": "https://github.com/yuriburk/nextlevelweek-1.git",
   "author": "Yuri Burk <yuriburk@gmail.com>",

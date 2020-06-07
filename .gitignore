@@ -4,3 +4,4 @@ yarn.lock
 *.sqlite
 uploads/*.png
 uploads/*.jpg
+dist
