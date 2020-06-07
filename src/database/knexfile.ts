@@ -3,14 +3,19 @@ import path from 'path';
 const config = {
   client: 'sqlite3',
   connection: {
-    filename: path.resolve(process.cwd(), 'src', 'database', 'database.sqlite'),
+    filename: path.resolve(
+      process.cwd(),
+      'dist',
+      'database',
+      'database.sqlite'
+    ),
   },
   useNullAsDefault: true,
   migrations: {
-    directory: path.resolve(process.cwd(), 'src', 'database', 'migrations'),
+    directory: path.resolve(process.cwd(), 'dist', 'database', 'migrations'),
   },
   seeds: {
-    directory: path.resolve(process.cwd(), 'src', 'database', 'seeds'),
+    directory: path.resolve(process.cwd(), 'dist', 'database', 'seeds'),
   },
 };
 
